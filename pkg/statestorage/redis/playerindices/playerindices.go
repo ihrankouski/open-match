@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	om_messages "github.com/GoogleCloudPlatform/open-match/internal/pb"
+	om_messages "github.com/GoogleCloudPlatform/open-match/pkg/pb"
 	"github.com/gomodule/redigo/redis"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"

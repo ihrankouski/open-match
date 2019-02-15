@@ -1,5 +1,5 @@
 # Golang application builder steps
-FROM gcr.io/open-match-222408/openmatch-base:dev as builder
+FROM golang:1.11 as builder
 
 # Necessary to get a specific version of the golang k8s client
 RUN go get github.com/tools/godep
@@ -18,7 +18,6 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo .
 # Uncomment to build production images (removes all troubleshooting tools)
 FROM alpine:3.8
 WORKDIR /go/src/github.com/GoogleCloudPlatform/open-match/cmd/mmforc
-COPY --from=builder /go/src/github.com/GoogleCloudPlatform/open-match/config/matchmaker_config.yaml ../../config/
 RUN ln -s ../../config/matchmaker_config.yaml
 COPY --from=builder /go/src/github.com/GoogleCloudPlatform/open-match/cmd/mmforc/mmforc .
 

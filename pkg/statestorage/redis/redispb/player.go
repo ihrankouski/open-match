@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"time"
 
-	om_messages "github.com/GoogleCloudPlatform/open-match/internal/pb"
-	"github.com/GoogleCloudPlatform/open-match/internal/statestorage/redis/playerindices"
+	om_messages "github.com/GoogleCloudPlatform/open-match/pkg/pb"
+	"github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis/playerindices"
 	"github.com/cenkalti/backoff"
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gomodule/redigo/redis"

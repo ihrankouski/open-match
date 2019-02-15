@@ -28,9 +28,9 @@ import (
 	"time"
 
 	"github.com/GoogleCloudPlatform/open-match/config"
-	"github.com/GoogleCloudPlatform/open-match/internal/logging"
-	"github.com/GoogleCloudPlatform/open-match/internal/metrics"
-	redisHelpers "github.com/GoogleCloudPlatform/open-match/internal/statestorage/redis"
+	"github.com/GoogleCloudPlatform/open-match/pkg/logging"
+	"github.com/GoogleCloudPlatform/open-match/pkg/metrics"
+	redisHelpers "github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis"
 	"github.com/tidwall/gjson"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/tag"

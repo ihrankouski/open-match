@@ -1,7 +1,7 @@
 /*
 This application handles all the startup and connection scaffolding for
 running a gRPC server serving the APIService as defined in
-${OM_ROOT}/internal/pb/mmlogic.pb.go
+${OM_ROOT}/pkg/pb/mmlogic.pb.go
 
 All the actual important bits are in the API Server source code: apisrv/apisrv.go
 
@@ -28,8 +28,8 @@ import (
 
 	"github.com/GoogleCloudPlatform/open-match/cmd/mmlogicapi/apisrv"
 	"github.com/GoogleCloudPlatform/open-match/config"
-	"github.com/GoogleCloudPlatform/open-match/internal/metrics"
-	redisHelpers "github.com/GoogleCloudPlatform/open-match/internal/statestorage/redis"
+	"github.com/GoogleCloudPlatform/open-match/pkg/metrics"
+	redisHelpers "github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
