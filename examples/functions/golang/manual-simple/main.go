@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ihrankouski/open-match/config"
+	"github.com/ihrankouski/open-match/pkg/config"
 	messages "github.com/ihrankouski/open-match/internal/pb"
 	"github.com/ihrankouski/open-match/internal/set"
 	"github.com/ihrankouski/open-match/internal/statestorage/redis/ignorelist"

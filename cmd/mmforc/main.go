@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ihrankouski/open-match/config"
+	"github.com/ihrankouski/open-match/pkg/config"
 	"github.com/ihrankouski/open-match/pkg/logging"
 	"github.com/ihrankouski/open-match/pkg/metrics"
 	redisHelpers "github.com/ihrankouski/open-match/pkg/statestorage/redis"

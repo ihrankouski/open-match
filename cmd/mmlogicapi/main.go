@@ -27,7 +27,7 @@ import (
 	"os/signal"
 
 	"github.com/ihrankouski/open-match/cmd/mmlogicapi/apisrv"
-	"github.com/ihrankouski/open-match/config"
+	"github.com/ihrankouski/open-match/pkg/config"
 	"github.com/ihrankouski/open-match/pkg/metrics"
 	redisHelpers "github.com/ihrankouski/open-match/pkg/statestorage/redis"
 

@@ -28,7 +28,7 @@ import (
 	"os/signal"
 
 	"github.com/ihrankouski/open-match/cmd/backendapi/apisrv"
-	"github.com/ihrankouski/open-match/config"
+	"github.com/ihrankouski/open-match/pkg/config"
 	"github.com/ihrankouski/open-match/pkg/logging"
 	"github.com/ihrankouski/open-match/pkg/metrics"
 	redishelpers "github.com/ihrankouski/open-match/pkg/statestorage/redis"
