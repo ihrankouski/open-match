@@ -24,12 +24,12 @@ import (
 	"errors"
 	"net"
 
-	"github.com/GoogleCloudPlatform/open-match/pkg/expbo"
-	"github.com/GoogleCloudPlatform/open-match/pkg/metrics"
-	frontend "github.com/GoogleCloudPlatform/open-match/pkg/pb"
-	redisHelpers "github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis"
-	"github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis/playerindices"
-	"github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis/redispb"
+	"github.com/ihrankouski/open-match/pkg/expbo"
+	"github.com/ihrankouski/open-match/pkg/metrics"
+	frontend "github.com/ihrankouski/open-match/pkg/pb"
+	redisHelpers "github.com/ihrankouski/open-match/pkg/statestorage/redis"
+	"github.com/ihrankouski/open-match/pkg/statestorage/redis/playerindices"
+	"github.com/ihrankouski/open-match/pkg/statestorage/redis/redispb"
 
 	"github.com/cenkalti/backoff"
 	log "github.com/sirupsen/logrus"

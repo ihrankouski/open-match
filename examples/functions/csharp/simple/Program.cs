@@ -12,7 +12,7 @@ namespace mmfdotnet
     /// An example of a simple match function
     /// </summary>
     /// <remarks>
-    /// Compatible with example profiles found here: https://github.com/GoogleCloudPlatform/open-match/tree/master/examples/backendclient/profiles
+    /// Compatible with example profiles found here: https://github.com/ihrankouski/open-match/tree/master/examples/backendclient/profiles
     /// </remarks>
     class Program
     {

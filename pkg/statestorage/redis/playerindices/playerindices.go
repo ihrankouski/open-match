@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	om_messages "github.com/GoogleCloudPlatform/open-match/pkg/pb"
+	om_messages "github.com/ihrankouski/open-match/pkg/pb"
 	"github.com/gomodule/redigo/redis"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
@@ -103,7 +103,7 @@ var (
 // looking at the kubernetes deployment resource definitions in the
 // 'deployments/k8s/' directory.
 //
-// https://github.com/GoogleCloudPlatform/open-match/issues/42 discusses more
+// https://github.com/ihrankouski/open-match/issues/42 discusses more
 // about how configs are managed in Open Match.
 //
 // You can update the list of indices at run-time if you need to add or remove

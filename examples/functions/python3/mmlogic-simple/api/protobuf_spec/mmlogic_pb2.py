@@ -31,8 +31,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='api/protobuf-spec/mmlogic.proto',
   package='api',
   syntax='proto3',
-  serialized_options=_b('Z5github.com/GoogleCloudPlatform/open-match/internal/pb'),
-  serialized_pb=_b('\n\x1f\x61pi/protobuf-spec/mmlogic.proto\x12\x03\x61pi\x1a api/protobuf-spec/messages.proto2\xf6\x02\n\x07MmLogic\x12<\n\nGetProfile\x12\x15.messages.MatchObject\x1a\x15.messages.MatchObject\"\x00\x12;\n\x0e\x43reateProposal\x12\x15.messages.MatchObject\x1a\x10.messages.Result\"\x00\x12\x33\n\x0bReturnError\x12\x10.messages.Result\x1a\x10.messages.Result\"\x00\x12?\n\rGetPlayerPool\x12\x14.messages.PlayerPool\x1a\x14.messages.PlayerPool\"\x00\x30\x01\x12=\n\x14GetAllIgnoredPlayers\x12\x11.messages.IlInput\x1a\x10.messages.Roster\"\x00\x12;\n\x12ListIgnoredPlayers\x12\x11.messages.IlInput\x1a\x10.messages.Roster\"\x00\x42\x37Z5github.com/GoogleCloudPlatform/open-match/internal/pbb\x06proto3')
+  serialized_options=_b('Z5github.com/ihrankouski/open-match/internal/pb'),
+  serialized_pb=_b('\n\x1f\x61pi/protobuf-spec/mmlogic.proto\x12\x03\x61pi\x1a api/protobuf-spec/messages.proto2\xf6\x02\n\x07MmLogic\x12<\n\nGetProfile\x12\x15.messages.MatchObject\x1a\x15.messages.MatchObject\"\x00\x12;\n\x0e\x43reateProposal\x12\x15.messages.MatchObject\x1a\x10.messages.Result\"\x00\x12\x33\n\x0bReturnError\x12\x10.messages.Result\x1a\x10.messages.Result\"\x00\x12?\n\rGetPlayerPool\x12\x14.messages.PlayerPool\x1a\x14.messages.PlayerPool\"\x00\x30\x01\x12=\n\x14GetAllIgnoredPlayers\x12\x11.messages.IlInput\x1a\x10.messages.Roster\"\x00\x12;\n\x12ListIgnoredPlayers\x12\x11.messages.IlInput\x1a\x10.messages.Roster\"\x00\x42\x37Z5github.com/ihrankouski/open-match/internal/pbb\x06proto3')
   ,
   dependencies=[api_dot_protobuf__spec_dot_messages__pb2.DESCRIPTOR,])
 

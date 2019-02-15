@@ -120,7 +120,7 @@ func Read() (*viper.Viper, error) {
 	// a ConfigMap that is written to the matchmaker_config.yaml file, which is
 	// what the Open Match components using Viper monitor for changes.
 	// More details about Open Match's use of Kubernetes ConfigMaps at:
-	// https://github.com/GoogleCloudPlatform/open-match/issues/42
+	// https://github.com/ihrankouski/open-match/issues/42
 	cfg.WatchConfig() // Watch and re-read config file.
 	return cfg, err
 }

@@ -34,7 +34,7 @@ The [Quickstart for Docker](https://cloud.google.com/cloud-build/docs/quickstart
     # Build all other images. 
     for dfile in $(find . -name "Dockerfile" -iregex "./\(cmd\|test\|examples\)/.*"); do cd $(dirname ${dfile}); gcloud builds submit --config cloudbuild.yaml & cd -; done
     ```
-    Note: as of v0.3.0 alpha, the Python and PHP MMF examples still depend on the previous way of building until [issue #42, introducing new config management](https://github.com/GoogleCloudPlatform/open-match/issues/42) is resolved (apologies for the inconvenience):
+    Note: as of v0.3.0 alpha, the Python and PHP MMF examples still depend on the previous way of building until [issue #42, introducing new config management](https://github.com/ihrankouski/open-match/issues/42) is resolved (apologies for the inconvenience):
     ```
     gcloud builds submit --config cloudbuild_mmf_py3.yaml
     gcloud builds submit --config cloudbuild_mmf_php.yaml
@@ -72,7 +72,7 @@ gcloud compute zones list
 
 ## Configuration
 
-Currently, each component reads a local config file `matchmaker_config.json`, and all components assume they have the same configuration (if you would like to help us design the replacement config solution, please join the [discussion](https://github.com/GoogleCloudPlatform/open-match/issues/42).  To this end, there is a single centralized config file located in the `<REPO_ROOT>/config/` which is symlinked to each component's subdirectory for convenience when building locally.  Note: [there is an issue with symlinks on Windows](../issues/57).
+Currently, each component reads a local config file `matchmaker_config.json`, and all components assume they have the same configuration (if you would like to help us design the replacement config solution, please join the [discussion](https://github.com/ihrankouski/open-match/issues/42).  To this end, there is a single centralized config file located in the `<REPO_ROOT>/config/` which is symlinked to each component's subdirectory for convenience when building locally.  Note: [there is an issue with symlinks on Windows](../issues/57).
 
 ## Running Open Match in a development environment
 

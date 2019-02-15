@@ -12,7 +12,7 @@ This project attempts to solve the networking and plumbing problems, so game dev
 This software is currently alpha, and subject to change.  Although Open Match has already been used to run [production workloads within Google](https://cloud.google.com/blog/topics/inside-google-cloud/no-tricks-just-treats-globally-scaling-the-halloween-multiplayer-doodle-with-open-match-on-google-cloud), but it's still early days on the way to our final goal. There's plenty left to write and we welcome contributions. **We strongly encourage you to engage with the community through the [Slack or Mailing lists](#get-involved) if you're considering using Open Match in production before the 1.0 release, as the documentation is likely to lag behind the latest version a bit while we focus on getting out of alpha/beta as soon as possible.**
 
 ## Version
-[The current stable version in master is 0.3.1 (alpha)](https://github.com/GoogleCloudPlatform/open-match/releases/tag/v0.3.1-alpha).  At this time only bugfixes and doc update pull requests will be considered.
+[The current stable version in master is 0.3.1 (alpha)](https://github.com/ihrankouski/open-match/releases/tag/v0.3.1-alpha).  At this time only bugfixes and doc update pull requests will be considered.
 Version 0.4.0 is in active development; please target code changes to the 040wip branch.
 
 # Core Concepts
@@ -118,7 +118,7 @@ The Evaluator resolves conflicts when multiple MMFs select the same player(s).
 
 The Evaluator is a component run by the Matchmaker Function Orchestrator (MMFOrc) after the matchmaker functions have been run, and some proposed results are available.  The Evaluator looks at all the proposals, and if multiple proposals contain the same player(s), it breaks the tie. In many simple matchmaking setups with only a few game modes and well-tuned matchmaking functions, the Evaluator may functionally be a no-op or first-in-first-out algorithm. In complex matchmaking setups where, for example, a player can queue for multiple types of matches, the Evaluator provides the critical customizability to evaluate all available proposals and approve those that will passed to your game servers.
 
-Large-scale concurrent matchmaking functions is a complex topic, and users who wish to do this are encouraged to engage with the [Open Match community](https://github.com/GoogleCloudPlatform/open-match#get-involved) about patterns and best practices.
+Large-scale concurrent matchmaking functions is a complex topic, and users who wish to do this are encouraged to engage with the [Open Match community](https://github.com/ihrankouski/open-match#get-involved) about patterns and best practices.
 
 ### Matchmaking Functions (MMFs)
 
@@ -240,7 +240,7 @@ See the [provisional roadmap](docs/roadmap.md) for more information on upcoming 
 
 ## State storage
 - [X] All state storage operations should be isolated from core components into the `statestorage/` modules.  This is necessary precursor work to enabling Open Match state storage to use software other than Redis.
-- [X] [The Redis deployment should have an example HA configuration](https://github.com/GoogleCloudPlatform/open-match/issues/41)
+- [X] [The Redis deployment should have an example HA configuration](https://github.com/ihrankouski/open-match/issues/41)
 - [X] Redis watch should be unified to watch a hash and stream updates.  The code for this is written and validated but not committed yet. 
 - [ ] We don't want to support two redis watcher code paths, but we will until golang protobuf reflection is a bit more usable. [Design doc](https://docs.google.com/document/d/19kfhro7-CnBdFqFk7l4_HmwaH2JT_Rhw5-2FLWLEGGk/edit#heading=h.q3iwtwhfujjx), [github issue](https://github.com/golang/protobuf/issues/364)
 - [X] Player/Group records generated when a client enters the matchmaking pool need to be removed after a certain amount of time with no activity. When using Redis, this will be implemented as a expiration on the player record.

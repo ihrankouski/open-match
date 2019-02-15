@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"time"
 
-	om_messages "github.com/GoogleCloudPlatform/open-match/pkg/pb"
+	om_messages "github.com/ihrankouski/open-match/pkg/pb"
 	"github.com/cenkalti/backoff"
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gomodule/redigo/redis"

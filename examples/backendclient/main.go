@@ -31,7 +31,7 @@ import (
 	"net"
 	"os"
 
-	backend "github.com/GoogleCloudPlatform/open-match/internal/pb"
+	backend "github.com/ihrankouski/open-match/internal/pb"
 	"github.com/tidwall/gjson"
 	"google.golang.org/grpc"
 )

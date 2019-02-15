@@ -11,7 +11,7 @@ kubectl create clusterrolebinding projectowner-cluster-admin-binding --clusterro
 ```
 kubectl apply -f 03-prometheus.yaml
 ```
-[There is a known dependency ordering issue when applying the Prometheus resource; just wait a couple moments and apply it again.](https://github.com/GoogleCloudPlatform/open-match/issues/46)
+[There is a known dependency ordering issue when applying the Prometheus resource; just wait a couple moments and apply it again.](https://github.com/ihrankouski/open-match/issues/46)
 
 [Accurate as of v0.2.0] Output from `kubectl get all` if everything succeeded should look something like this:
 ```

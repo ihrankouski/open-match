@@ -31,8 +31,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/GoogleCloudPlatform/open-match/test/cmd/frontendclient/player"
-	frontend "github.com/GoogleCloudPlatform/open-match/test/cmd/frontendclient/proto"
+	"github.com/ihrankouski/open-match/test/cmd/frontendclient/player"
+	frontend "github.com/ihrankouski/open-match/test/cmd/frontendclient/proto"
 	"github.com/gobs/pretty"
 	"google.golang.org/grpc"
 )

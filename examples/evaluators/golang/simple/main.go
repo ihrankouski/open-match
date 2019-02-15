@@ -32,8 +32,8 @@ import (
 	"strings"
 	"time"
 
-	om_messages "github.com/GoogleCloudPlatform/open-match/internal/pb"
-	"github.com/GoogleCloudPlatform/open-match/internal/statestorage/redis/redispb"
+	om_messages "github.com/ihrankouski/open-match/internal/pb"
+	"github.com/ihrankouski/open-match/internal/statestorage/redis/redispb"
 	"github.com/gobs/pretty"
 	"github.com/gomodule/redigo/redis"
 	"github.com/spf13/viper"

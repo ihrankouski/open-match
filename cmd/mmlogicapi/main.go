@@ -26,10 +26,10 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/GoogleCloudPlatform/open-match/cmd/mmlogicapi/apisrv"
-	"github.com/GoogleCloudPlatform/open-match/config"
-	"github.com/GoogleCloudPlatform/open-match/pkg/metrics"
-	redisHelpers "github.com/GoogleCloudPlatform/open-match/pkg/statestorage/redis"
+	"github.com/ihrankouski/open-match/cmd/mmlogicapi/apisrv"
+	"github.com/ihrankouski/open-match/config"
+	"github.com/ihrankouski/open-match/pkg/metrics"
+	redisHelpers "github.com/ihrankouski/open-match/pkg/statestorage/redis"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
