@@ -38,7 +38,7 @@ spec:
         volumeMounts:
         - name: om-configmap
           subPath: matchmaker_config.yaml
-          mountPath: /go/src/github.com/ihrankouski/open-match/config/matchmaker_config.yaml
+          mountPath: /open-match/config/matchmaker_config.yaml
         ports:
         - name: grpc
           containerPort: 50505
@@ -92,7 +92,7 @@ spec:
         volumeMounts:
         - name: om-configmap
           subPath: matchmaker_config.yaml
-          mountPath: /go/src/github.com/ihrankouski/open-match/config/matchmaker_config.yaml
+          mountPath: /open-match/config/matchmaker_config.yaml
         ports:
         - name: grpc
           containerPort: 50504
@@ -146,7 +146,7 @@ spec:
         volumeMounts:
         - name: om-configmap
           subPath: matchmaker_config.yaml
-          mountPath: /go/src/github.com/ihrankouski/open-match/config/matchmaker_config.yaml
+          mountPath: /open-match/config/matchmaker_config.yaml
         ports:
         - name: metrics
           containerPort: 9555
@@ -190,7 +190,7 @@ spec:
         volumeMounts:
         - name: om-configmap
           subPath: matchmaker_config.yaml
-          mountPath: /go/src/github.com/ihrankouski/open-match/config/matchmaker_config.yaml
+          mountPath: /open-match/config/matchmaker_config.yaml
         ports:
         - name: grpc
           containerPort: 50503
